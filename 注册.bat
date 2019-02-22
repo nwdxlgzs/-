@@ -1,106 +1,105 @@
 @echo off
 
-:³õÊ¼»¯
+:åˆå§‹åŒ–
 mode con cols=53 lines=13 & color f0
-if not exist "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini" cd.>·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini
+if not exist "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini" cd.>éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini
 setlocal enabledelayedexpansion
-title=ÓÃ»§×¢²á¶Ë
+title=ç”¨æˆ·æ³¨å†Œç«¯
 set "returna=0"
 set "returnb=0"
 set "returnc=0"
 
-:ÉùÃ÷
-echo=ÉùÃ÷
-echo=¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-echo=±§Ç¸£¬ÎªÁË±ãÀû³ÌĞò¿ª·¢£¬×¢²á¶ËÃ»ÓĞGUI½çÃæ¡£
-echo=×¢²áÒ²¾ÍÒ»´ÎµÄÊÂ£¬ÍùºóÄú²»»áÒ»Ö±Ãæ¶ÔÃüÁîĞĞ²Ù×÷µÄ¡£
-echo=(Ç¿ĞĞÕÒ½è¿ÚÑÚÊÎ£¬Emmm)
-echo=×¢²á¶ËÃ»ÓĞ¶ñÒâ´úÂë£¬Çë·ÅĞÄÊ¹ÓÃ¡£
-echo=¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-echo=°´ÈÎÒâ¼üÌø¹ı10ÃëÉùÃ÷µÄµÈ´ı
+:å£°æ˜
+echo=å£°æ˜
+echo=â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+echo=æŠ±æ­‰ï¼Œä¸ºäº†ä¾¿åˆ©ç¨‹åºå¼€å‘ï¼Œæ³¨å†Œç«¯æ²¡æœ‰GUIç•Œé¢ã€‚
+echo=æ³¨å†Œä¹Ÿå°±ä¸€æ¬¡çš„äº‹ï¼Œå¾€åæ‚¨ä¸ä¼šä¸€ç›´é¢å¯¹å‘½ä»¤è¡Œæ“ä½œçš„ã€‚
+echo=(å¼ºè¡Œæ‰¾å€Ÿå£æ©é¥°ï¼ŒEmmm)
+echo=æ³¨å†Œç«¯æ²¡æœ‰æ¶æ„ä»£ç ï¼Œè¯·æ”¾å¿ƒä½¿ç”¨ã€‚
+echo=â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+echo=æŒ‰ä»»æ„é”®è·³è¿‡10ç§’å£°æ˜çš„ç­‰å¾…
 timeout 10 >nul
 
-:×¢²áÂ¼ÈëÕËºÅ
+:æ³¨å†Œå½•å…¥è´¦å·
 CLS
-echo=ÑéÖµÌáÊ¾¿ò
-echo=^+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª^+
-if "!returna!"=="0" if "!returnb!"=="0" if "!returnc!"=="0" echo=^|ÔİÎŞÏûÏ¢              ^|
-if "!returna!"=="1" echo=^|ÇëÊäÈë8Î»ÒÔÉÏµÄ×Ö·û^!   ^|
-if "!returnb!"=="1" echo=^|ÇëÊäÈë20Î»ÒÔÄÚµÄ×Ö·û^!  ^|
-if "!returnc!"=="1" echo=^|³öÏÖ·Ç·¨×Ö·û^!          ^|
-echo=^+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª^+
+echo=éªŒå€¼æç¤ºæ¡†
+echo=^+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”^+
+if "!returna!"=="0" if "!returnb!"=="0" if "!returnc!"=="0" echo=^|æš‚æ— æ¶ˆæ¯              ^|
+if "!returna!"=="1" echo=^|è¯·è¾“å…¥8ä½ä»¥ä¸Šçš„å­—ç¬¦^!   ^|
+if "!returnb!"=="1" echo=^|è¯·è¾“å…¥20ä½ä»¥å†…çš„å­—ç¬¦^!  ^|
+if "!returnc!"=="1" echo=^|å‡ºç°éæ³•å­—ç¬¦^!          ^|
+echo=^+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”^+
 
-::ÕËºÅÊäÈë
-set /p typeaccount=×¢²áÕËºÅ:
+::è´¦å·è¾“å…¥
+set /p typeaccount=æ³¨å†Œè´¦å·:
 
-::ÕËºÅÊäÈëÅĞ¶ÏÄ£¿é
-if "!typeaccount:~7,1!"=="" (set "returna=1"&set "returnc=0"&set "returnb=0"&goto ×¢²áÂ¼ÈëÕËºÅ) else (set "returnc=0"&set "returnb=0"&set "returna=0")
-if "!typeaccount:~20,1!" neq "" (set "returnb=1"&goto ×¢²áÂ¼ÈëÕËºÅ) else (set "returnb=0")
-ren "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini" "!typeaccount!.ini"
-if not exist "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini" (if exist "!typeaccount!.ini" (set "returnc=0) else (set "returnc=1"&goto ×¢²áÂ¼ÈëÕËºÅ)) else (set "returnc=1"&goto ×¢²áÂ¼ÈëÕËºÅ)
-echo=ÕËºÅ·ûºÏÒªÇó¡£
+::è´¦å·è¾“å…¥åˆ¤æ–­æ¨¡å—
+if "!typeaccount:~7,1!"=="" (set "returna=1"&set "returnc=0"&set "returnb=0"&goto æ³¨å†Œå½•å…¥è´¦å·) else (set "returnc=0"&set "returnb=0"&set "returna=0")
+if "!typeaccount:~20,1!" neq "" (set "returnb=1"&goto æ³¨å†Œå½•å…¥è´¦å·) else (set "returnb=0")
+ren "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini" "!typeaccount!.ini"
+if not exist "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini" (if exist "!typeaccount!.ini" (set "returnc=0) else (set "returnc=1"&goto æ³¨å†Œå½•å…¥è´¦å·)) else (set "returnc=1"&goto æ³¨å†Œå½•å…¥è´¦å·)
+echo=è´¦å·ç¬¦åˆè¦æ±‚ã€‚
 
-::ÅĞ¶Ï²ÎÊı¹éÁã
-ren "!typeaccount!.ini" "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini"
+::åˆ¤æ–­å‚æ•°å½’é›¶
+ren "!typeaccount!.ini" "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini"
 set "returna=0"
 set "returnb=0"
 set "returnc=0"
 
-:×¢²áÂ¼ÈëÃÜÂë
+:æ³¨å†Œå½•å…¥å¯†ç 
 CLS
-echo=ÄúÕıÎª!typeaccount!ÕËºÅÉèÖÃÃÜÂë
-echo=ÑéÖµÌáÊ¾¿ò
-echo=^+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª^+
-if "!returna!"=="0" if "!returnb!"=="0" if "!returnc!"=="0" echo=^|ÔİÎŞÏûÏ¢              ^|
-if "!returna!"=="1" echo=^|ÇëÊäÈë8Î»ÒÔÉÏµÄ×Ö·û^!   ^|
-if "!returnb!"=="1" echo=^|ÇëÊäÈë20Î»ÒÔÄÚµÄ×Ö·û^!  ^|
-if "!returnc!"=="1" echo=^|³öÏÖ·Ç·¨×Ö·û^!          ^|
-echo=^+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª^+
+echo=æ‚¨æ­£ä¸º!typeaccount!è´¦å·è®¾ç½®å¯†ç 
+echo=éªŒå€¼æç¤ºæ¡†
+echo=^+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”^+
+if "!returna!"=="0" if "!returnb!"=="0" if "!returnc!"=="0" echo=^|æš‚æ— æ¶ˆæ¯              ^|
+if "!returna!"=="1" echo=^|è¯·è¾“å…¥8ä½ä»¥ä¸Šçš„å­—ç¬¦^!   ^|
+if "!returnb!"=="1" echo=^|è¯·è¾“å…¥20ä½ä»¥å†…çš„å­—ç¬¦^!  ^|
+if "!returnc!"=="1" echo=^|å‡ºç°éæ³•å­—ç¬¦^!          ^|
+echo=^+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”^+
 
-::ÃÜÂëÊäÈë
-set /p typepassword=ÊäÈëÃÜÂë:
+::å¯†ç è¾“å…¥
+set /p typepassword=è¾“å…¥å¯†ç :
 
-::ÃÜÂëÊäÈëÅĞ¶ÏÄ£¿é
-if "!typepassword:~7,1!"=="" (set "returna=1"&goto ×¢²áÂ¼ÈëÃÜÂë) else (set "returnc=0"&set "returnb=0"&set "returna=0")
-if "!typepassword:~20,1!" neq "" (set "returnb=1"&set "returnc=0"&set "returnb=0"&goto ×¢²áÂ¼ÈëÃÜÂë) else (set "returnb=0")
-ren "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini" "!typepassword!.ini"
-if not exist "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini"£¨if exist "!typepassword!.ini" (set "returnc=0") else (set "returnc=1"&goto ×¢²áÂ¼ÈëÃÜÂë)) else (set "returnc=1"&goto ×¢²áÂ¼ÈëÕËºÅ)
-echo=ÃÜÂë·ûºÏÒªÇó
+::å¯†ç è¾“å…¥åˆ¤æ–­æ¨¡å—
+if "!typepassword:~7,1!"=="" (set "returna=1"&goto æ³¨å†Œå½•å…¥å¯†ç ) else (set "returnc=0"&set "returnb=0"&set "returna=0")
+if "!typepassword:~20,1!" neq "" (set "returnb=1"&set "returnc=0"&set "returnb=0"&goto æ³¨å†Œå½•å…¥å¯†ç ) else (set "returnb=0")
+ren "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini" "!typepassword!.ini"
+if not exist "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini"ï¼ˆif exist "!typepassword!.ini" (set "returnc=0") else (set "returnc=1"&goto æ³¨å†Œå½•å…¥å¯†ç )) else (set "returnc=1"&goto æ³¨å†Œå½•å…¥è´¦å·)
+echo=å¯†ç ç¬¦åˆè¦æ±‚
 
-::²ĞÁô´¦Àí
+::æ®‹ç•™å¤„ç†
 CLS
-ren "!typepassword!.ini" "·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini"
+ren "!typepassword!.ini" "éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini"
 set "returna=0"
 set "returnb=0"
 set "returnc=0"
-del /f /q ·Ç·¨×Ö·ûÑéÖ¤ÈİÆ÷.ini
+del /f /q éæ³•å­—ç¬¦éªŒè¯å®¹å™¨.ini
 set "errorlevel=0"
 
-:´´½¨ÓÃ»§
-echo=ÄúµÄÕËºÅÊÇ!typeaccount!
-echo=ÄúµÄÃÜÂëÊÇ!typepassword!
-echo=ÇëÄúÀÎ¼Ç¡£
-echo=Ğ´ÈëÊı¾İÖĞ¡£
-echo [ÓÃ»§ĞÅÏ¢]>!typeaccount!.ini
-echo ÕËºÅ=!typeaccount!>>!typeaccount!.ini
-echo ÃÜÂë=!typepassword!>>!typeaccount!.ini
-echo ×¢²áÈÕÆÚ=!date!!time!>>!typeaccount!.ini
+:åˆ›å»ºç”¨æˆ·
+echo=æ‚¨çš„è´¦å·æ˜¯!typeaccount!
+echo=æ‚¨çš„å¯†ç æ˜¯!typepassword!
+echo=è¯·æ‚¨ç‰¢è®°ã€‚
+echo=å†™å…¥æ•°æ®ä¸­ã€‚
+echo [ç”¨æˆ·ä¿¡æ¯]>!typeaccount!.ini
+echo è´¦å·=!typeaccount!>>!typeaccount!.ini
+echo å¯†ç =!typepassword!>>!typeaccount!.ini
+echo æ³¨å†Œæ—¥æœŸ=!date!!time!>>!typeaccount!.ini
 echo.>>!typeaccount!.ini
-echo [±àÒëÖ§³Ö]>>!typeaccount!.ini
-xcopy /c /y "!typeaccount!.ini" %~dp0ÓÃ»§\
+echo [ç¼–è¯‘æ”¯æŒ]>>!typeaccount!.ini
+xcopy /c /y "!typeaccount!.ini" %~dp0ç”¨æˆ·\
+xcopy /c /y "!typeaccount!.ini" %~dp0ç™»é™†\
 del /f /q "!typeaccount!.ini"
 
-:½áÊø´¦Àí
+:ç»“æŸå¤„ç†
 CLS
-echo=³ÌĞò15ÃëÄÚ¹Ø±ÕÏÔÊ¾ÕËºÅÃÜÂë£¬Çë¾¡¿ìÊì¼Ç¡££¨°´¼üÌø¹ıµÈ´ı£©
-echo=ÄúµÄÕËºÅÊÇ!typeaccount!
-echo=ÄúµÄÃÜÂëÊÇ!typepassword!
+echo=ç¨‹åº15ç§’å†…å…³é—­æ˜¾ç¤ºè´¦å·å¯†ç ï¼Œè¯·å°½å¿«ç†Ÿè®°ã€‚ï¼ˆæŒ‰é”®è·³è¿‡ç­‰å¾…ï¼‰
+echo=æ‚¨çš„è´¦å·æ˜¯!typeaccount!
+echo=æ‚¨çš„å¯†ç æ˜¯!typepassword!
 timeout 15
-echo=¸ĞĞ»×¢²á¡£
-xcopy /c /y "%~dp0ÓÃ»§\!typeaccount!.ini" %~dp0µÇÂ½\
-echo=Íê³ÉµÇÂ½×¼±¸^!
-echo=µÈ´ı»º³åÖĞ£¬³ÌĞòÂíÉÏÆô¶¯¡­
+echo=æ„Ÿè°¢æ³¨å†Œã€‚
+echo=ç­‰å¾…ç¼“å†²ä¸­ï¼Œç¨‹åºé©¬ä¸Šå¯åŠ¨â€¦
 timeout 1 >nul
 cd..&cd..
-start ÊÂ¼şÌáĞÑÆ÷.exe
+start äº‹ä»¶æé†’å™¨.exe
 exit
